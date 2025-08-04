@@ -1,0 +1,268 @@
+/* ARCHIVO DE CSS CREADO POR FERNANDO DIAZ GONZALEZ COLOMBIA SOACHA */
+/* ESTILOS PARA MISION.HTML - POLÍTICA DE CALIDAD, MISIÓN Y VISIÓN */
+
+/* ====================== */
+/* ESTILOS GENERALES */
+/* ====================== */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* ====================== */
+/* ENCABEZADO CON LOGOS */
+/* ====================== */
+.header-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: #d10000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-link {
+  display: block;
+  text-align: center;
+}
+
+.logo-text {
+  font-size: 0.9em;
+  color: white;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.logo-izquierda,
+.logo-derecha {
+  height: 60px;
+  width: auto;
+}
+
+/* ====================== */
+/* CABECERA PRINCIPAL */
+/* ====================== */
+header {
+  max-width: 1000px;
+  margin: 20px auto 40px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+header h1 {
+  color: #d32f2f;
+  font-size: 2.2em;
+  margin: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #d32f2f;
+  padding-bottom: 10px;
+}
+
+/* ====================== */
+/* POLÍTICA DE CALIDAD */
+/* ====================== */
+.politica-container {
+  background-color: #fff;
+  border-left: 5px solid #d32f2f;
+  padding: 25px;
+  margin: 30px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.codigo-version {
+  font-size: 0.9em;
+  color: #666;
+  text-align: right;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.politica-titulo {
+  color: #d32f2f;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.politica-texto {
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.qr-invitacion {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+/* ====================== */
+/* MISIÓN Y VISIÓN */
+/* ====================== */
+.mision-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.mision,
+.vision {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #d32f2f;
+}
+
+.mision h2,
+.vision h2 {
+  color: #d32f2f;
+  font-size: 1.5em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.mision p,
+.vision p {
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+/* ====================== */
+/* BOTÓN DE INICIO */
+/* ====================== */
+.boton-inicio {
+  display: block;
+  text-align: center;
+  margin: 40px auto;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+  background-color: #d32f2f;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #d32f2f;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.boton-inicio:hover {
+  background-color: white;
+  color: #d32f2f;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* BOTON PARA VOLVER ARRIBA */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d10000;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.back-to-top:hover {
+  background-color: #b00000;
+  transform: translateY(-5px);
+}
+
+/* ====================== */
+/* PIE DE PÁGINA */
+/* ====================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  font-size: 0.9em;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* ====================== */
+/* DISEÑO RESPONSIVE */
+/* ====================== */
+@media (max-width: 768px) {
+  .header-logos {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .logo-izquierda,
+  .logo-derecha {
+    height: 80px;
+  }
+
+  header {
+    padding: 20px;
+    margin: 10px 15px 30px;
+  }
+
+  .mision-vision {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .politica-container {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+    margin: 15px 0;
+  }
+
+  .politica-titulo {
+    font-size: 1.5em;
+  }
+
+  .boton-inicio {
+    padding: 10px 25px;
+    margin: 30px auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .back-to-top {
+    display: block;
+  }
+}

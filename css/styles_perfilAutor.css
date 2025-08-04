@@ -1,0 +1,335 @@
+/* ARCHIVO DE CSS CREADO POR FERNANDO DIAZ GONZALEZ COLOMBIA SOACHA */
+/* ESTILOS PARA PERFIL - AUTORI.HTML */
+
+/* ====================== */
+/* ESTILOS GENERAL DE LA VISUAL DE CSS PARA LA PAGINA TABLA */
+/* ====================== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Fondo blanco */
+}
+
+/* Estilos para el fondo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("../img/fondo001.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ffffffe6;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0000004d;
+}
+/* ENCABEZADOS DE LOS LOGOS ESCUDOS Y BANDERA */
+.header-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: #d10000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white; /* Color del texto */
+  gap: 5px;
+}
+
+.logo-text {
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.logo-izquierda,
+.logo-derecha {
+  height: 60px;
+  width: auto;
+}
+
+/* CONTENNEDOR GENERAL PRONCIPAL */
+header {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #d10000; /* Borde superior rojo */
+}
+
+h1 {
+  color: #d10000; /* Rojo corporativo */
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  border-bottom: 2px solid #d10000; /* Rojo */
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: #a00000; /* Rojo más oscuro */
+  margin-top: 25px;
+  font-size: 1.5em;
+}
+
+/* SECCION DE DATOS PERSONALES DE FERNANDO DIAZ GONZALEZ  */
+.datos-personales {
+  background-color: #fff; /* Fondo blanco */
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border-left: 4px solid #d10000; /* Borde izquierdo rojo */
+  border: 1px solid #e0e0e0; /* Borde gris claro */
+}
+
+.datos-personales h2 {
+  margin-top: 0;
+  color: #d10000; /* Rojo */
+}
+
+/* SECCIONES DEL CONTENIDO */
+.seccion {
+  margin-bottom: 30px;
+  padding: 0 15px;
+  background-color: #fff; /* Fondo blanco */
+}
+
+.seccion p {
+  text-align: justify;
+}
+
+.seccion ul {
+  padding-left: 20px;
+}
+
+.seccion li {
+  margin-bottom: 8px;
+}
+
+/* AGRADECIMIENTO ESPECIAL*/
+.agradecimiento {
+  background-color: #fff; /* Fondo blanco */
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #d10000; /* Rojo */
+  border: 1px solid #e0e0e0; /* Borde gris claro */
+}
+
+/* BOTON VOLVER   */
+.boton-inicio {
+  display: block;
+  text-align: center;
+  margin: 40px auto;
+  width: fit-content;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 25px;
+  background-color: #d32f2f;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #d32f2f;
+}
+
+.boton-inicio:hover {
+  background-color: white;
+  color: #d32f2f;
+  transform: translateY(-2px);
+}
+
+.boton-inicio p {
+  margin: 0;
+}
+
+/* BOTON PARA VOLVER ARRIBA */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d10000;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.back-to-top:hover {
+  background-color: #b00000;
+  transform: translateY(-5px);
+}
+
+/* SIGNIFICADO DIGITAL DE SKFDIGITAL ESPECIAL*/
+.significado-skfdigital {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #d32f2f;
+  border-radius: 0 8px 8px 0;
+  font-size: 1.1em;
+  line-height: 1.7;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.significado-skfdigital strong {
+  color: #d32f2f;
+  font-size: 1.2em;
+}
+
+.inicial {
+  font-weight: bold;
+  color: #d32f2f;
+  font-size: 1.3em;
+}
+
+.digital {
+  font-weight: bold;
+  color: #333;
+  text-decoration: underline;
+}
+
+/* ESTILO PARA CIERTAS SECCIONES  */
+.seccion {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 5px oklab(61.482000000000006% 0.22019 0.12318 / 0.986);
+}
+
+.titulo-seccion {
+  color: #d32f2f;
+  margin-top: 0;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.lista-habilidades {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.lista-habilidades li {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.lista-habilidades li::before {
+  content: "•";
+  color: #d32f2f;
+  font-weight: bold;
+  position: absolute;
+  left: -15px;
+}
+
+.proyecto-ambicioso {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-left: 3px solid #2a7da2;
+  font-style: italic;
+  margin-top: 20px;
+}
+/* PIE DE LA PAGINA O FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000; /* Rojo */
+  color: white;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* BOTON PARA VOLVER ARRIBA */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d10000;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.back-to-top:hover {
+  background-color: #b00000;
+  transform: translateY(-5px);
+}
+
+/* ====================== */
+/* MEDIA Y CODIGO PARA DISPOSITIVOS MOVILES */
+/* ====================== */
+@media (max-width: 768px) {
+  .header-logos {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo-izquierda,
+  .logo-derecha {
+    margin: 10px 0;
+    height: 60px;
+  }
+
+  header {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .botones-navegacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boton-inicio,
+  .boton-proyectos {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

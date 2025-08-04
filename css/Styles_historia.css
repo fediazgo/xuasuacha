@@ -1,0 +1,322 @@
+/* ARCHIVO DE CSS CREADO POR FERNANDO DIAZ GONZALEZ COLOMBIA SOACHA */
+/* ESTILOS PARA HISTORIA.HTML - VERSIÓN SIMILAR  CON INDEX.HTML */
+
+/* ====================== */
+/* ESTILS GENERAL DE LA VISUAL DE CSS PARA LA PAGINA HISTORIA */
+/* ====================== */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+/* Estilos para el fondo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("../img/fondo001.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+/* ====================== */
+/* ENCABEZADO CON LOGOS */
+/* ====================== */
+.header-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: #d10000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-link {
+  display: block;
+  text-align: center;
+}
+
+.logo-text {
+  font-size: 0.9em;
+  color: white;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.logo-izquierda,
+.logo-derecha {
+  height: 60px;
+  width: auto;
+}
+/* ====================== */
+/* COMPONENTES COMUNES DE LA PAGINA Y DE ARREGLO CSS*/
+/* ====================== */
+
+/* Barra de navegación superior */
+.top-nav {
+  background-color: #d32f2f;
+  padding: 15px 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* LINEA DECORATIVA IGUAL QUE INDEX.HTML) */
+.linea-decorativa {
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
+}
+
+.linea-decorativa:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 80%;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: -1;
+}
+
+.icono-linea {
+  background: #f5f5f5;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  color: #d32f2f;
+}
+
+/* Tarjetas de logros (igual que en index.htlm) */
+.tarjeta-logro {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icono-logro {
+  font-size: 2.5rem;
+  margin-right: 25px;
+  flex-shrink: 0;
+}
+
+.texto-logro h4 {
+  margin-top: 0;
+  color: #d32f2f;
+  font-size: 1.3em;
+}
+
+.texto-logro p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+/* FOOTR IGUAL QUE EN LA PAGINA INDEX */
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 20px;
+  background-color: #000000;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* ====================== */
+/* ESTILOS ESPECÍFICOS PARA HISTORIA.HTML */
+/* ====================== */
+
+.header-historia {
+  padding: 40px 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.box {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.texto h1 {
+  font-size: 2.2em;
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.texto h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin: 15px 0 10px;
+}
+
+/* CONTENEDOR PRINCIPAL DE LA HOSTORIA  */
+.contenido-historia {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+/* SECCIONES DE CONTENIDO DE LA SECCION HISTORIA */
+.seccion-historia {
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.hechos-destacados {
+  margin-top: 50px;
+}
+
+/* Lista  */
+.lista-destacada {
+  margin: 20px 0;
+  padding-left: 25px;
+}
+
+.lista-destacada li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* TITULOS ESPECIFICOS PARA LA PAGINA HOSTORIA DE SOACHA   */
+.contenido-historia h3 {
+  color: #d32f2f;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* BOTON VOLVER   */
+.boton-inicio {
+  display: block;
+  text-align: center;
+  margin: 40px auto;
+  width: fit-content;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 25px;
+  background-color: #d32f2f;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #d32f2f;
+}
+
+.boton-inicio:hover {
+  background-color: white;
+  color: #d32f2f;
+  transform: translateY(-2px);
+}
+
+.boton-inicio p {
+  margin: 0;
+}
+
+/* BOTON PARA VOLVER ARRIBA */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d10000;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.back-to-top:hover {
+  background-color: #b00000;
+  transform: translateY(-5px);
+}
+/* ====================== */
+/* VERSIÓN PARA DISPOSITIVOS MOVILES CELILAR  */
+/* ====================== */
+@media (max-width: 768px) {
+  .header-historia {
+    padding: 30px 15px;
+  }
+
+  .contenido-historia {
+    padding: 0 15px 30px;
+  }
+
+  .seccion-historia {
+    padding: 20px;
+  }
+
+  .lista-destacada {
+    padding-left: 20px;
+  }
+
+  /* TARJETAS DE LOGROS */
+  .tarjeta-logro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icono-logro {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .boton-inicio {
+    width: 80%;
+    padding: 12px;
+  }
+}
